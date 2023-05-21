@@ -2,6 +2,14 @@
 name = "haversine-rs"
 version = "0.1.0"
 edition = "2021"
+authors = ["Efrén Fuentes (efrenfuentes@gmail.com)"]
+description = "Provides some helpers functions to calculate the distance between two points on Earth using the Haversine formula."
+repository = "https://github.com/efrenfuentes/haversine-rs"
+keywords = ["haversine", "geolocation", "distance", "earth", "math", "bearing", "latitude", "longitude"]
+documentation = "https://docs.rs/haversine-rs"
+categories = ["mathematics", "science", "geospatial"]
+license = "MIT"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
