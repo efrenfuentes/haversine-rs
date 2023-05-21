@@ -8,7 +8,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-haversine_rs = "0.2.0"
+haversine_rs = "0.2.1"
 ```
 
 ## Usage
