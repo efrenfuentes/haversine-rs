@@ -1,12 +1,12 @@
 [package]
 name = "haversine-rs"
-version = "0.2.1"
+version = "0.2.2"
 edition = "2021"
 authors = ["Efrén Fuentes (efrenfuentes@gmail.com)"]
 description = "Provides some helpers functions to calculate the distance between two points on Earth using the Haversine formula."
 repository = "https://github.com/efrenfuentes/haversine-rs"
 keywords = ["haversine", "geolocation", "distance", "earth", "bearing"]
-documentation = "https://docs.rs/haversine-rs/0.2.0/haversine_rs/"
+documentation = "https://docs.rs/haversine-rs/0.2.2/haversine_rs/"
 categories = ["mathematics", "science", "geospatial"]
 license = "MIT"
 readme = "README.md"
