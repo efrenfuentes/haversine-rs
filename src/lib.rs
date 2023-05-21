@@ -52,6 +52,35 @@ pub fn distance(point_a: Point, point_b: Point, unit: Unit) -> f64 {
     2.0 * r * a.sqrt().atan2((1.0 - a).sqrt())
 }
 
+/// Calculates the distance between multiple points.
+///
+/// # Examples
+///
+/// ```
+/// use haversine_rs::point::Point;
+/// use haversine_rs::units::Unit;
+/// use haversine_rs::distance_vec;
+///
+/// let point_x = Point::new(40.7767644, -73.9761399);
+/// let point_y = Point::new(40.773987, -73.971769);
+/// let point_z = Point::new(40.771209, -73.9673991);
+///
+/// let distance = distance_vec(vec![point_x, point_y, point_z], Unit::Miles);
+///
+/// assert!(distance == 0.5971169371087564);
+/// ```
+pub fn distance_vec(points: Vec<Point>, unit: Unit) -> f64 {
+    let mut total = 0.0;
+
+    for i in 0..=points.len() {
+        if i == points.len() - 1 {
+            break;
+        }
+        total += distance(points[i], points[i + 1], unit);
+    }
+    total
+}
+
 /// Calculates the bearing between two points.
 ///
 /// # Examples

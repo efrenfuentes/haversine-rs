@@ -1,6 +1,6 @@
 
 /// The unit of measurement to use when calculating the distance between two points.
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Copy)]
 pub enum Unit {
     Kilometers,
     Miles,

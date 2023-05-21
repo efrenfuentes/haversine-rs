@@ -1,5 +1,5 @@
 /// A point on the earth's surface.
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Copy)]
 pub struct Point {
     pub latitude: f64,
     pub longitude: f64,
