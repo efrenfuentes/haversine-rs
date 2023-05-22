@@ -5,6 +5,7 @@ pub enum Unit {
     Kilometers,
     Miles,
     Meters,
+    Custom(f64),
 }
 
 impl Unit {
@@ -23,12 +24,16 @@ impl Unit {
     ///
     /// unit = Unit::Meters;
     /// assert!(unit.earth_radius() == 6_371_000.0);
+    ///
+    /// unit = Unit::Custom(100.0);
+    /// assert!(unit.earth_radius() == 100.0);
     /// ```
     pub fn earth_radius(self) -> f64 {
         match self {
             Unit::Kilometers => 6_371.0,
             Unit::Miles => 3_959.0,
             Unit::Meters => 6_371_000.0,
+            Unit::Custom(radius) => radius,
         }
     }
 }
